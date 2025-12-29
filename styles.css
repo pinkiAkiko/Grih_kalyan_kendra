@@ -122,7 +122,9 @@
   z-index: 9999;
   background: linear-gradient(180deg, #ffffff, #f0f9fb);
 }
-
+.btn {
+    font-size: 14px;
+}
 /* Mobile Nav Links */
 .kb-mobile-nav .nav-link {
   color: var(--theme-dark-green) !important;
@@ -143,8 +145,8 @@
 /* Accessibility Button */
 .kb-access-btn {
   position: fixed;
-  right: 20px;
-  top: 50%;
+      right: 5px;
+    top: 30%;
   transform: translateY(-50%);
   z-index: 1060;
   width: 45px;
@@ -154,19 +156,21 @@
   justify-content: center;
   background: #f0f7fa;
   border: 1px solid rgba(135, 200, 234, 0.4);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .kb-access-btn:hover {
   background: #e3f4f8;
-  transform: scale(1.05);
+  transform: translateY(calc(-50% + 8px));
   box-shadow: 0 4px 10px rgba(135, 200, 234, 0.2);
 }
 
 .kb-access-btn i {
   color: var(--theme-dark-green) !important;
+  font-size: 29px;
 }
+
 
 /*=============================================== landing page first section =================================== */
 
